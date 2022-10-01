@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+ 
+ <head>
+ 
+ <title>Polskie powstania narodowe</title>
+   
+   <meta charset="UTF-8"></meta>
+   <meta name="keywords" content="polskie powstania,polskie powstania narodowe,powstanie warszawskie,powstanie kościuszkowskie,powstanie wielkopolskie,powstanie styczniowe,powstanie listopadowe"></meta>
+   
+   <link rel="stylesheet" href="style2.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">     
+  
+  </head>
+ 
+ <body>
+   
+   <div id="container">
+   
+    <div class="header">
+		<div class="logo">
+			<center><img src="min.jpg" height="50" width="50">Polskie powstania narodowe</center>
+		<div style="clear:both;"></div>
+		</div>
+   
+		<div class="nav">
+		   <ol>
+			<li><a href="indeks.html">Strona główna</a></li>
+			<li><a href="powstania.html">Powstania</a>
+			<ul>
+						<li><a href="kościuszkowskie.html">Kościuszkowskie</a></li>
+						<li><a href="powstanie listopadowe.html">Listopadowe</a></li>
+						<li><a href="powstanie styczniowe.html">Styczniowe</a></li>
+						<li><a href="powstanie wielkopolskie.html">Wielkopolskie</a></li>
+						<li><a href="1śląskie.html">I śląskie</a></li>
+						<li><a href="2śląskie.html">II śląskie</a></li>
+						<li><a href="3śląskie.html">III śląskie</a></li>
+						<li><a href="powstanie warszawskie.html">Warszawskie</a></li>
+			</ul>
+			</li>
+			<li><a href="polecane.html">Polecane książki</a></li>
+			<li><a href="mailto:slawekjalojda@gmail.com">Kontakt</a></li>
+		   </ol>
+		</div>
+   </div>
+   
+   <div id="topbar">
+	<div id="topbarL">
+		<img src="powstania.png" height="150" width="150">
+	</div> 
+		<div id="topbarR">
+		<span class="bigtitle">Powstać jak feniks z popiołów</span>
+		<div class="solidline"></div>
+		'Powstać na nowo po całkowitym zniszczeniu'; zwrot, w mitol. grec. Feniks 
+		– legendarny ptak z Etiopii, który pod koniec długiego życia spalał się na stosie,a z popiołów odradzał się na nowo. 
+		Stał się symbolem odmłodzenia i zmartwychwstania. 
+		Takiego właśnie zmartwychwstania doświadczała Polska na przestrzeni swojej 1050 letniej historii.
+		</div>
+	<div style="clear:both;"></div>
+   </div>
+   
+   
+   <div id="content">
+   <span class="bigtitle">I powstanie śląskie</span> <br/>
+   <div class="solidline"></div>
+   <article>
+   <img class="contentimage" src="śląskie.jpg">
+   I Powstanie Śląskie wybuchło w nocy z 16 na 17 sierpnia 1919 r. i objęło tereny powiatu rybnickiego i pszczyńskiego oraz część okręgu przemysłowego.
+   Na jego czele stanął śląski działacz polityczny Alfons Zgrzebniok, który wraz ze swoim sztabem przebywał w Sosnowcu.
+   Bezpośrednią przyczyną wybuchu powstania była masakra górników z kopalni "Mysłowice", którzy domagali się zaległych wypłat. Kiedy 15 sierpnia 1919 r. tłum wtargnął przez bramę, niemieckie wojsko otworzyło ogień. 
+   Zginęło wtedy siedmiu górników, dwie kobiety i trzynastoletni chłopiec.
+   Na Śląsku wrzało jednak wcześniej.
+   W maju na konferencji w Wersalu zadecydowano, że o przynależności atrakcyjnych gospodarczo terenów Śląska przesądzi plebiscyt.
+   Wobec trudności gospodarczych w regionie pracę przerwało 40 kopalń. Górnicy nie otrzymywali pensji, więc zdecydowali się na strajk generalny.
+   <br>
+   <div class="solidline"></div>
+   Dzień po masakrze mieszkańcy śląskich miast zaczęli atakować posterunki Grenschutzu - niemieckiej straży granicznej. 
+   Opanowali m.in. Tychy, Radzionków, Piekary i część Katowic, w tym dworzec kolejowy w Katowicach-Ligocie. Niemcom udało się wkrótce odbić te punkty. Wobec przewagi wroga, 24 sierpnia dowódcy Powstania wstrzymali walki.
+   26 sierpnia, wobec braku pomocy ze strony państwa polskiego i koalicji, walka mieszkańców Śląska dobiegła końca.
+   <br>
+   <div class="solidline"></div>
+   Nieprzygotowane organizacyjnie powstanie nie zakończyło się sukcesem politycznym, zwróciło jednak uwagę międzynarodowej społeczności na sprawę Śląska.
+   Pod jej naciskiem Niemcy ogłosili amnestię dla uczestników powstania.
+   </article>
+   
+   
+   
+   
+   
+   </div>
+   
+   <div id="footer">
+    Poznaj historię polskich powstań narodowych. &copy; Wszelkie prawa zastrzeżone
+   </div>
+   
+   </div>
+   
+     <script src="jquery-1.11.3.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+   
+  </body>
+</html>
